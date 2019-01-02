@@ -1,22 +1,29 @@
-import React from "react";
+import React from 'react';
 
-const Proc = ({ninjas}) => {
-    return(
-        <div>
-            {
-           ninjas.map(ninja =>{
-        return ninja.age > 25?(
-                <ul className="cont" key={ninja.id}>
+const Proc = ({ ninjas, delNinja}) => {
+    console.log(delNinja);
+    
+    const ninjalist = ninjas.map(ninja => {
+        return(
+            <ul key={ninja.id}>
                 <li>{ninja.name}</li>
                 <li>{ninja.age}</li>
                 <li>{ninja.belt}</li>
+                <button onClick={()=>{delNinja(ninja.id)}}>Delete Ninja</button>
             </ul>
-            ):null
+        )
     })
-            }
-        </div>
+
+    return(
+       <div className="cont">
+            {ninjalist}
+       </div>
     );
-    
 }
 
-export default Proc;
+// })
+
+
+
+
+export default Proc
