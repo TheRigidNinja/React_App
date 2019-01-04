@@ -1,4 +1,7 @@
-body{
-    background: black;
-    color: brown;
+
+.home .post img{
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    opacity: 0.6;
 }

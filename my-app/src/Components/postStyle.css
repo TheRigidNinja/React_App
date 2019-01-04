@@ -1,0 +1,17 @@
+
+.post img{
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    opacity: 0.6;
+}
+
+.card-content{
+    margin-left: 100px;
+}
+
+
+
+.post{
+    overflow: hidden;
+}
