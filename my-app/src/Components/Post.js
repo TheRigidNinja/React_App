@@ -21,7 +21,7 @@ class Post extends Component{
                     {this.props.post.body}
                 </p>
                 <div className="center">
-                    <button className="btn grey" onClick={this.handleClick}>DELETE POST</button>
+                    <button className="btn green" onClick={this.handleClick}>DELETE POST</button>
                 </div>
             </div>
         ):(
